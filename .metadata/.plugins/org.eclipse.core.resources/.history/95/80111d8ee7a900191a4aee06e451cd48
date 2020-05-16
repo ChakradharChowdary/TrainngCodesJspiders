@@ -1,0 +1,24 @@
+package demopack.bl;
+
+public class Emp
+{
+  private int empId;
+ private String empName;
+ private double empSal;
+public Emp(int empId, String empName, double empSal) 
+{
+	super();
+	this.empId = empId;
+	this.empName = empName;
+	this.empSal = empSal;
+}
+@Override
+public String toString() 
+{
+	System.out.println("--------------------");
+	System.out.println("empId->"+empId);
+	System.out.println("empName->"+empName);
+	System.out.println("empSal->"+empSal);
+	return "";
+}
+}

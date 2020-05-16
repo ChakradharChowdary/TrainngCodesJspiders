@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+
+<beans>
+   
+   <bean id="c1" class="org.jsp.app.Car" autowire="byType">
+   <property name="carName" value="BMW"></property>
+   <property name="carColour" value="red"></property>
+   <property name="carCost" value="1000000.00"></property>
+   </bean>
+   <bean id="d1" class="org.jsp.app.Driver">
+   <property name="driverName" value="xyz"></property>
+   <property name="mobileNum" value="7890654343"></property>
+   </bean>
+
+</beans>

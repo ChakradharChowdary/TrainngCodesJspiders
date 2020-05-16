@@ -1,0 +1,13 @@
+package org.app.programs;
+
+import java.util.Scanner;
+
+public class PowerOfGivenNumber {
+public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	System.out.println("Enter the Number");
+	int num1=scanner.nextInt();
+	System.out.println("Enter the power");
+	int pwr1=scanner.nextInt();
+}
+}

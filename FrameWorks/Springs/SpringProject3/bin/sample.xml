@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+
+<beans>
+   
+   <bean id="s2" class="org.jsp.app.Employee">
+   <constructor-arg value="123"></constructor-arg>
+   <constructor-arg value="580000.00"></constructor-arg>
+   <constructor-arg ref="a2"></constructor-arg>
+   </bean>
+   
+   <bean id="a2" class="org.jsp.app.Address">
+   <constructor-arg value="190"></constructor-arg>
+   <constructor-arg value="NRpet"></constructor-arg>
+   <constructor-arg value="hyd"></constructor-arg>
+   <constructor-arg value="kurnool"></constructor-arg>
+   </bean>
+
+</beans>

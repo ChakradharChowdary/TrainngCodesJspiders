@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+
+<beans>
+   
+   <bean id="c3" class="org.jsp.app.Car1" autowire="constructor">
+   <constructor-arg  value="AP21E5566"></constructor-arg>
+   <constructor-arg value="RED"></constructor-arg>
+   <constructor-arg value="20.00"></constructor-arg>
+   </bean>
+   <bean id="Driver1"   class="org.jsp.app.Driver1">
+   <constructor-arg value="rajuBhai"></constructor-arg>
+   <constructor-arg value="8769990007"></constructor-arg>
+   </bean>
+
+</beans>

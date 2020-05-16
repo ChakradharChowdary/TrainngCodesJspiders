@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+
+<beans>
+   
+   <bean id="u1" class="org.jsp.app.University" autowire="byName">
+   <property name="universityName" value="JNTU"></property>
+   <property name="universityLoc" value="Hyd"></property>
+   </bean>
+   <bean id="college" class="org.jsp.app.College">
+   <property name="collegeName" value="Narayana"></property>
+   <property name="collegeLoc" value="Gudur"></property>
+   </bean>
+   
+
+</beans>

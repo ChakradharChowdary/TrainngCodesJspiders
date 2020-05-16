@@ -1,0 +1,25 @@
+package com.arrays.ul;
+
+public class NumToString 
+{
+
+static String[]one= {"","","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"};
+static String[]two= {"","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
+public static void print(int num,String s1)
+{
+	if(num>19)
+		System.out.print(one[num/10]+""+two[num%10]);
+	else
+		System.out.print(two[num]);
+	
+	System.out.print(s1);
+}
+public static void main(String[] args) {
+	int num=237643987;
+	print(num/10000000,"crore");
+	print((num/100000)%100,"lakh");
+	print((num/1000)%100,"thousand");
+	print((num/100)%10,"hundred");
+	print((num)%100,"");
+}
+}

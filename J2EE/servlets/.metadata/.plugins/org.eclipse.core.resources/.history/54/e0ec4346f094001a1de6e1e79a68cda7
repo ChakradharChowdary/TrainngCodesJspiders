@@ -1,0 +1,60 @@
+package org.java.springjdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+public class EmployeeDaoImp implements EmployeeDao {
+	private DataSource dataSource;
+
+	
+
+	public void setDatasource(DataSource datasource) {
+		this.dataSource = dataSource;
+	}
+
+	@Override
+	public void createEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		Connection connection=null;
+		PreparedStatement  preparedStatement=null;
+		 try {
+			 connection=dataSource.getConnection();
+			 String sql="INSERT INTO test.employeejdbc()";
+			 preparedStatement=connection.prepareStatement(sql);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		 
+
+	}
+
+	@Override
+	public Employee getEmployeeById(int employeeId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteEmployeeById(int employeeId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateEmployeeEmailById(String newEmail, int employeeId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Employee> getAllEmployeeDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

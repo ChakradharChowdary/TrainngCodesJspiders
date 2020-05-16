@@ -1,0 +1,11 @@
+#Tomcat publish data
+#Fri May 15 15:19:08 IST 2020
+org.eclipse.jst.jee.server\:/binary\:D\:\\workspace\\J2EE\\servlets\\PhoneNumjpa\\WebContent\\WEB-INF\\lib\\spring-web-4.3.1.RELEASE.jar=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\PhoneNumjpa\\WEB-INF\\lib\\spring-web-4.3.1.RELEASE.jar
+org.eclipse.jst.jee.server\:EmployeeManagement=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\EmployeeManagement
+org.eclipse.jst.jee.server\:/binary\:D\:\\workspace\\J2EE\\servlets\\SpringMVCJpa\\WebContent\\WEB-INF\\lib\\spring-web-4.3.1.RELEASE.jar=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\SpringMVCJpa\\WEB-INF\\lib\\spring-web-4.3.1.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\workspace\\J2EE\\servlets\\EmployeeManagement\\WebContent\\WEB-INF\\lib\\spring-web-4.3.1.RELEASE.jar=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\EmployeeManagement\\WEB-INF\\lib\\spring-web-4.3.1.RELEASE.jar
+org.eclipse.jst.jee.server\:GenerateOTP=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\GenerateOTP
+org.eclipse.jst.jee.server\:PhoneNumjpa=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\PhoneNumjpa
+org.eclipse.jst.jee.server\:HospitalMangementSystem=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\HospitalMangementSystem
+org.eclipse.jst.jee.server\:CheckEmail=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\CheckEmail
+org.eclipse.jst.jee.server\:SpringMVCJpa=C\:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\wtpwebapps\\SpringMVCJpa

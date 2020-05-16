@@ -1,0 +1,12 @@
+package org.java.springjdbc;
+
+public class Employee {
+	private int empId;
+	private String empName;
+	private String email;
+	private Double salary;
+	private String gender;
+
+	
+
+}

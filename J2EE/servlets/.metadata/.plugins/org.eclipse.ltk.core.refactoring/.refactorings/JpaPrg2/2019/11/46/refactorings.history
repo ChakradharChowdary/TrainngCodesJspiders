@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JpaPrg2/WebContent/Jpa1.html&apos; to &apos;addFestival.html&apos;" description="Rename resource &apos;Jpa1.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Jpa1.html" name="addFestival.html" stamp="1573640585515" updateReferences="true"/>
+</session>

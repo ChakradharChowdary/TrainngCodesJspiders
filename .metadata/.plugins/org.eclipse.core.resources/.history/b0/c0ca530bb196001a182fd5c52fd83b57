@@ -1,0 +1,51 @@
+package com.costructor.bl;
+
+public class Book 
+{
+  public String bt;
+  public String bau;
+  public int bp;
+  public int bpr;
+  public int be;
+ public Book(int bp,int bpr,int be)
+{
+	this.bt="java";
+	this.bau="abhi";
+	this.bp=bp;
+	this.bpr=bpr;
+	this.be=be;
+}
+ public Book(int bpr)
+{
+	this.bt="html";
+	this.bau="shiva";
+	this.bp=280;
+	this.bpr=bpr;
+	this.be=5;
+}
+ public Book(String ba,int bp,int bpr,int be)
+{
+	this.bt="java";
+	this.bau=bau;
+	this.bp=bp;
+	this.bpr=bpr;
+	this.be=be;
+}
+ public Book(String bt,String ba,int bp,int bpr,int be)
+ {
+ 	this.bt=bt;
+ 	this.bau=bau;
+ 	this.bp=bp;
+ 	this.bpr=bpr;
+ 	this.be=be;
+ }
+ public void bookInfo()
+ {
+	 System.out.println("inside the book Info..");
+	 System.out.println("book title is:"+this.bt);
+	 System.out.println("book author is:"+this.bau);
+	 System.out.println("book edition is:"+this.be);
+	 System.out.println("book pages is:"+this.bp);
+	 System.out.println("book price is:"+this.bpr);
+ }
+}

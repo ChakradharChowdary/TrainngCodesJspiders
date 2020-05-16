@@ -1,0 +1,4 @@
+Tue Sep 17 2019 10:59:15 PM - CloudFoundryServer.modifyModules(...): add: { FirstWebApp [org.eclipse.jst.jee.server:FirstWebApp/jst.web]} remove: {}
+Tue Sep 17 2019 11:13:06 PM - CloudFoundryServerBehaviour.publishModule(...): ADDED { FirstWebApp [org.eclipse.jst.jee.server:FirstWebApp/jst.web]}
+Tue Sep 17 2019 11:31:06 PM - CloudFoundryServerBehaviour.publishModule(...): NO_CHANGE { FirstWebApp [org.eclipse.jst.jee.server:FirstWebApp/jst.web]}
+Wed Sep 18 2019 08:48:01 AM - CloudFoundryServer.modifyModules(...): add: {} remove: { FirstWebApp [org.eclipse.jst.jee.server:FirstWebApp/jst.web]}

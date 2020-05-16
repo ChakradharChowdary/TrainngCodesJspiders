@@ -1,0 +1,47 @@
+package org.java.springjdbc;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+public class EmployeeDaoImp implements EmployeeDao {
+	private DataSource dataSource;
+
+	
+
+	public void setDatasource(DataSource datasource) {
+		this.datasource = datasource;
+	}
+
+	@Override
+	public void createEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		 
+
+	}
+
+	@Override
+	public Employee getEmployeeById(int employeeId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteEmployeeById(int employeeId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateEmployeeEmailById(String newEmail, int employeeId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Employee> getAllEmployeeDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+
+<beans>
+   
+   <bean id="s1" class="org.jsp.app.Hospital">
+   <constructor-arg value="xyz"></constructor-arg>
+   <constructor-arg value="jntu"></constructor-arg>
+   <constructor-arg ref="a1"></constructor-arg>
+   </bean>
+   <bean id="a1" class="org.jsp.app.Doctor">
+   <property name="docName" value="chinna"></property>
+   <property name="specialization" value="xyz"></property>
+   </bean>
+
+</beans>

@@ -1,0 +1,5 @@
+package org.java.springjdbc;
+
+public interface EmployeeService {
+
+}

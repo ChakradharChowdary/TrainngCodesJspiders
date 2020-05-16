@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PhoneNumjpa/WebContent/WEB-INF/cell.xml&apos; to &apos;cell-servlet.xml&apos;" description="Rename resource &apos;cell.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/cell.xml" name="cell-servlet.xml" stamp="1573280877292" updateReferences="true"/>
+</session>

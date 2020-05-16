@@ -1,0 +1,19 @@
+package org.jsp.app;
+
+import java.util.Scanner;
+
+public class Main 
+{
+public static void main(String[] args)
+{Scanner scanner=new Scanner(System.in);
+System.out.println("enter your optioo");
+int a =scanner.nextInt();
+if(a==1)
+{
+	Operations.registartion();
+}
+else {
+	System.out.println("invalid option");
+}
+}
+}

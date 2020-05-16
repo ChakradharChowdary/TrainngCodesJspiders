@@ -1,0 +1,35 @@
+package my.pro.app;
+
+public class Palindrome
+{
+	public static int pal(int num)
+	 {
+		 int temp;
+		 temp=num;
+		 int out=0;
+		 while(num!=0)
+		 {
+			 int rem=num%10;
+			 out=out*10+rem;
+			 num=num/10;
+		 }
+		 if(temp==out)
+		 {
+
+			System.out.println("Palindrome");
+		 }
+		 else
+		 {
+			System.out.println("NotaPalindrome");
+		 }
+		 return out;
+		 }
+
+	 
+	 public static void main(String[] args) 
+	 {
+	  int res=pal(12121);
+	  System.out.println(res);
+	}
+	}           
+

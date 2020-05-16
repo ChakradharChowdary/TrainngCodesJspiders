@@ -1,0 +1,143 @@
+package org.jsp.app;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class Operations 
+{
+
+public static void registartion()
+{
+	String url="jdbc:mysql://localhost:3306?user=root&password=97051";
+	String query="insert into test.registrationprocess values(?,?,?,?)";
+	try
+	{
+		Connection connection=DriverManager.getConnection(url);
+		PreparedStatement preparedStatement=connection.prepareStatement(query);
+		System.out.println("enter name");
+		Scanner scanner=new Scanner(System.in);
+		preparedStatement.setString(1,scanner.next());
+		System.out.println("enter ph");
+		preparedStatement.setString(2, scanner.next());
+		System.out.println("enter email");
+		preparedStatement.setString(3, scanner.next());
+		System.out.println("enter pass");
+		String a=scanner.next();
+		System.out.println("confirm pass");
+		String b=scanner.next();
+		if(a.equals(b))
+		{
+			preparedStatement.setString(4, a);
+		}
+		else
+		{
+			System.out.println("enter pass again");
+		}
+		int res=preparedStatement.executeUpdate();
+		System.out.println("no of rows effected" +res);
+		
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+public static void login()
+{
+	Scanner scanner=new Scanner(System.in);
+
+	System.out.println("Enter 1 for login using phonenum and password");
+	System.out.println("Enter 2 for login using Email and password");
+	System.out.println("Enter  3 for login using Email(or)phonenum and password");
+	System.out.println("enter your choice");
+	int choice=scanner.nextInt();
+	
+	switch(choice)
+	{
+	
+    case 1:
+		mobile();
+		break;
+	/*case 2:
+		email();
+		break;
+	case 3 :
+		mobemail();
+		break;
+*/	
+		default:
+			break;
+			System.out.println("enter correct choice");
+	}
+
+
+public static void mobile()
+{
+	
+	String url="jdbc:mysql://localhost:3306?user=root&password=97051";
+	String query="select name from test.registrationprocess where PhoneNUm=? and Password=?";
+	
+		Connection connection;
+		try {
+			connection = DriverManager.getConnection(url);
+		PreparedStatement preparedStatement=connection.prepareStatement(query);
+		System.out.println("enter phno.");
+		Scanner scanner=new Scanner(System.in);
+		preparedStatement.setString(1,scanner.next());
+		System.out.println("enter pass");
+		preparedStatement.setString(2, scanner.next());
+		
+		
+		ResultSet res=preparedStatement.executeQuery();
+	    while(res.next())
+	    {
+	    	String name= res.getString("Name");
+	    	System.out.println("welcome" +name);
+	    }
+		
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
